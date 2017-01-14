@@ -2,7 +2,7 @@ FROM centos:7
 
 MAINTAINER Tao Guo <guotao945@gmail.com>
 
-RUN yum update
+#RUN yum update
 #Apache
 RUN yum -y install httpd
 
