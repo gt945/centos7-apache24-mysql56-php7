@@ -27,7 +27,7 @@ RUN yum install -y \
     php71w-pecl-xdebug \
     php71w-pecl-imagick \
     php71w-pecl-apcu \
-    php71w-gd \
+    php71w-gd
 
 #config
 RUN ln -sf /usr/share/zoneinfo/UTC /etc/localtime \
