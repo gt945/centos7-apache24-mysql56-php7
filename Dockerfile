@@ -14,19 +14,20 @@ RUN yum -y install mysql-community-server
 RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
-RUN yum install -y php70w
+RUN yum install -y php71w
 RUN yum install -y \
-    php70w-mbstring \
-    php70w-mysqlnd \
-    php70w-intl \
-    php70w-pdo \
-    php70w-pear \
-    php70w-opcache \
-    php70w-soap \
-    php70w-xml \
-    php70w-pecl-xdebug \
-    php70w-pecl-imagick \
-    php70w-gd
+    php71w-mbstring \
+    php71w-mysqlnd \
+    php71w-intl \
+    php71w-pdo \
+    php71w-pear \
+    php71w-opcache \
+    php71w-soap \
+    php71w-xml \
+    php71w-pecl-xdebug \
+    php71w-pecl-imagick \
+    php71w-pecl-apcu \
+    php71w-gd \
 
 #config
 RUN ln -sf /usr/share/zoneinfo/UTC /etc/localtime \
